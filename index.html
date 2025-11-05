@@ -112,7 +112,7 @@ html,body{
     <section class="panel" aria-label="Liên kết & mạng xã hội">
       <div class="section">Source</div>
       <div class="grid">
-        <a class="tile" href="" target="_blank" rel="noopener">❤️<strong>Liên quân Map Sáng</strong></a>
+        <a class="tile" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/esigncert/khoindvn/refs/heads/main/document/AovCheat.plist" target="_blank" rel="noopener">❤️<strong>Liên quân Map Sáng</strong></a>
       </div>
       <div class="grid2">
         <a class="tile" href="https://www.facebook.com/duc3435g/" target="_blank" rel="noopener"><strong>Coming Soon</strong></a>
@@ -149,12 +149,6 @@ function spawnHeart(x,y){
   avatar.appendChild(el); const t0=performance.now();
   function step(t){ const k=Math.min(1,(t-t0)/900); el.style.transform=`translate(${dx*k}px, ${dy*k}px) rotate(${rot*k}deg)`; el.style.opacity=(1-k).toFixed(2); if(k<1) requestAnimationFrame(step); else el.remove(); }
   requestAnimationFrame(step);
-}
-
-const grid=document.getElementById('grid');
-grid.style.cursor = 'pointer';
-thirdItem.addEventListener('click', () => {
-window.open('itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/esigncert/khoindvn/refs/heads/main/document/AovCheat.plist', '_blank');
 }
 
 // Galaxy background
